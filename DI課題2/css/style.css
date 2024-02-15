@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+body {
+    font-family: '游明朝', 'Yu Mincho', YuMincho,
+        'Hiragino Mincho Pro', serif;
+    padding: 0 1%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+ul {
+    margin: 0;
+}
+
+/* 
+header
+*/
+.logo img {
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+    background-color: #000;
+}
+
+header li {
+    margin-left: 30px;
+    color: #ffff;
+    line-height: 40px;
+}
+
+/* 
+main
+*/
+.main-container {
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* left */
+.left {
+    width: 70%;
+}
+
+.left h1 {
+    border-left: 4px solid;
+    border-bottom: 2px solid;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+
+.main-img {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.left-subtitle {
+    margin: 10px 0 0 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.gray_box {
+    background-color: #ddd;
+    padding: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.left .item {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.left p {
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+
+/* right */
+.right {
+    width: 30%;
+    padding: 10px 0 0 10px;
+}
+
+.right h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 3px;
+}
+
+.right ul {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* 
+footer
+ */
+footer {
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+}
+
+p {
+    line-height: 60px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery課題</title>
+    <link rel="stylesheet" href="./css/sanitize.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Photo/diblog_logo.jpg" alt="ロゴマーク">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">トップ</a></li>
+                <li><a href="#">プロフィール</a></li>
+                <li><a href="#">D.I.Blogについて</a></li>
+                <li><a href="#">登録フォーム</a></li>
+                <li><a href="#">問い合わせ</a></li>
+                <li><a href="#">その他</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <div class="left">
+                <h1>プログラミングに役立つ書籍位</h1>
+                <time datetime="2017-1-15">2017年1月15日</time>
+                <!-- <div>
+                    <img class='main-img' src="./Photo/bookstore.jpg" alt="本棚">
+                </div> -->
+
+                <div class="slider">
+                    <div><img src="Gallery/jQuery_image1.jpg" alt=""></div>
+                    <div><img src="Gallery/jQuery_image2.jpg" alt=""></div>
+                    <div><img src="Gallery/jQuery_image3.jpg" alt=""></div>
+                </div>
+
+                <p class="left-subtitle">D.I.BlogD.I.Wroksが提供する演習課題です。</p>
+                <h2 class="left-subtitle">記事中身</h2>
+                <div class="gray_box">
+                    <div class="item">
+                        <img src="./Photo/pic1.jpg" alt="参考写真">
+                        <p class="item-title">
+                            ドメイン取得方法
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./Photo/pic2.jpg" alt="参考写真">
+                        <p class="item-title">
+                            快適な職場環境
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./Photo/pic3.jpg" alt="参考写真">
+                        <p class="item-title">
+                            Unuponの基礎
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./Photo/pic4.jpg" alt="参考写真">
+                        <p class="item-title">
+                            マーケティング入門
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./Photo/pic5.jpg" alt="参考写真">
+                        <p class="item-title">
+                            アクティブラーニング’
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./Photo/pic6.jpg" alt="参考写真">
+                        <p class="item-title">
+                            CSSに効率的な勉強方法
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./Photo/pic7.jpg" alt="参考写真">
+                        <p class="item-title">
+                            リーダブルコードとは
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./Photo/pic8.jpg" alt="参考写真">
+                        <p class="item-title">
+                            HTML5の可能性
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <section class="site-title">
+                    <h2>人気の記事</h2>
+                    <ul>
+                        <li><a href="#">PHPおすすめ本</a></li>
+                        <li><a href="#">PHP MyAdmin</a></li>
+                        <li><a href="#">いま人気のエディタTops</a></li>
+                        <li><a href="#">HTMLの基礎</li>
+                    </ul>
+                </section>
+                <section class="site-title">
+                    <h2>オススメリンク</h2>
+                    <ul>
+                        <li><a href="#">ディーアイワークス株式会社</a></li>
+                        <li><a href="#">XAMPPのダウンロード</a></li>
+                        <li><a href="#">Eclipseのダウンロード</a></li>
+                        <li><a href="#">Braketsのダウンロード</a></li>
+                    </ul>
+                </section>
+                <section class="site-title">
+                    <h2>カテゴリ</h2>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">MySQL</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Copyright D.I.works| D.I. blog is the one which provides A
+            to Z about programming
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                fade: true,
+                dots: true,
+                autoplaySpeed: 2000,//500で0.5秒
+                autoplay: true,
+                speed: 2000,//初期値300
+                pauseOnFocus: false,
+                pauseOnHover: false,
+            });
+        });</script>
+</body>
+
+</html>

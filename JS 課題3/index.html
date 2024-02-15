@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS課題3</title>
+</head>
+
+<body>
+    <script>
+        // 問1===================== function-関数名-(因数1、2)return戻り値
+        document.write('問1' + '<br>');
+        function menseki(a) {
+            return '半径' + a + '㎝の円面積は' + a * a * 3.14 + '㎠です';
+        }
+        // 半径5cm
+        document.write(menseki(5) + '<br>');
+        // 半径7cm
+        document.write(menseki(8) + '<br>');
+        // 半径10cm
+        document.write(menseki(10) + '<br><br>');
+
+        // 問2=====================
+        document.write('問2' + '<br>');
+        function fee(grouopName, adults, children, adultFee = 500, childFee =
+            200) {
+            return 'グループの合計金額は ' +adults * adultFee +children * childFee+ ' 円です';
+        }
+        // A グループ ’’は空白で入力すると非表示
+        document.write(fee('A', 2, 4) + '<br>');
+        // B グループ
+        document.write(fee('B', 1, 5) + '<br>');
+        // C グループ
+        document.write(fee('C', 3, 7) + '<br>');
+
+    </script>
+</body>
+
+</html>

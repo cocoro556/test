@@ -1,0 +1,11 @@
+{
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "emmet.variables": {
+        "lang": "ja"
+    },
+    "files.exclude": {
+        "**/Thumbs.db": false
+    }
+}
